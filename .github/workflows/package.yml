@@ -4,6 +4,10 @@ on:
   push:
     tags:
       - "v[0-9]+.[0-9]+.[0-9]+"
+  pull_request:
+    branches:
+      - next
+      - ci/push_docker_image
   workflow_dispatch:
 
 env:
